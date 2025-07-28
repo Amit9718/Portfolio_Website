@@ -1,0 +1,1351 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(2, 2, 10);
+    color: white;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(3, 3, 23);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    margin-inline: 22px;
+    font-size: 22px;
+
+}
+
+ul li a:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.main {
+    margin-top: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main img {
+    width: 750px;
+}
+
+.main h1 {
+    font-size: 66px;
+}
+
+.main p {
+    font-size: 18px;
+    margin-top: 22px;
+    text-align: justify;
+    hyphens: auto;
+    text-justify: inter-word;
+    line-height: 1.6;
+}
+
+.main button {
+    width: 140px;
+    height: 40px;
+    background-color: aqua;
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+}
+
+.main h3 {
+    font-size: 22px;
+
+}
+
+.mainText {
+    margin-top: 0px;
+    text-align: left;
+}
+
+.head {
+    text-align: center;
+    padding: 88px;
+}
+
+.about-section {
+    padding: 80px 20px;
+    background-color: rgb(1, 1, 8);
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 6px solid aqua;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.about-text p {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #e8e8e8;
+}
+
+.about h1 {
+    font-size: 53px;
+}
+
+/* Skills Section Styling */
+.skills-section {
+    padding: 80px 20px;
+    background-color: rgb(1, 1, 8);
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.skill-name span {
+    font-size: 16px;
+    color: white;
+}
+
+.skill-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.skill-logo:hover {
+    transform: scale(1.1);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #00ffff, #0080ff);
+    width: 0%;
+    transition: width 1.5s ease-in-out;
+    border-radius: 4px;
+}
+
+/* Service Section */
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.btns button {
+    padding: 12px 20px;
+    border: 2px solid rgb(243, 12, 50);
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+.btns button:hover,
+.btns button.active {
+    background-color: rgb(243, 12, 50);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(243, 12, 50, 0.3);
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.serviceCard {
+    width: 300px;
+    padding: 22px;
+    background-color: gray;
+    color: white;
+    margin-inline: 20px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.serviceCard i {
+    font-size: 83px;
+}
+
+.serviceCard p {
+    margin-top: 22px;
+    text-align: justify;
+}
+
+.serviceCard h2 {
+    margin-top: 22px;
+}
+
+.serviceCard button {
+    margin-top: 22px;
+    width: 100px;
+    height: 33px;
+    border: none;
+    background-color: pink;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.serviceCard button:hover {
+    background-color: #ff69b4;
+    transform: translateY(-2px);
+}
+
+/* Work Section */
+.work {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.workCard {
+    text-align: center;
+    margin-top: 44px;
+}
+
+.workCard img {
+    width: 600px;
+    border-radius: 5px;
+    margin-inline: 22px;
+}
+
+.workCard a {
+    padding: 8px 22px;
+    background-color: rgb(233, 16, 52);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.workCard a:hover {
+    background-color: rgb(200, 14, 45);
+    transform: translateY(-2px);
+}
+
+/* Contact Section */
+.contact {
+    width: 400px;
+    margin: auto;
+    padding: 22px;
+    background-color: gray;
+    text-align: center;
+}
+
+.contact input {
+    width: 90%;
+    padding: 11px;
+    height: 12px;
+    margin-top: 22px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.contact input:focus {
+    border-color: aqua;
+    outline: none;
+}
+
+.contact textarea {
+    width: 96%;
+    font-size: 20px;
+    margin-top: 22px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.contact textarea:focus {
+    border-color: aqua;
+    outline: none;
+}
+
+.contact button {
+    width: 100px;
+    height: 33px;
+    background-color: rgb(197, 11, 42);
+    color: white;
+    border: none;
+    margin-top: 22px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: rgb(170, 9, 35);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.icons {
+    text-align: center;
+    font-size: 52px;
+    margin-top: 52px;
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.icons a:hover {
+    color: aqua;
+    transform: translateY(-3px);
+}
+
+.footer {
+    padding: 33px;
+}
+
+.text {
+    text-align: center;
+}
+
+.text p {
+    margin-top: 11px;
+    font-size: 22px;
+}
+
+#bar {
+    display: none;
+    font-size: 26px;
+}
+
+/* Button Hover Effects */
+.main button:hover {
+    background-color: #00cccc;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* ===== COMPLETE RESPONSIVE DESIGN FOR ALL DEVICES ===== */
+
+/* Extra Small Mobile Phones (320px - 374px) */
+@media screen and (max-width: 374px) {
+    nav {
+        height: 70px;
+        padding: 0 10px;
+        z-index: 1000;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+    #bar:hover {
+        color: aqua;
+    }
+
+    /* Home Section - Extra Small Mobile */
+    .main {
+        margin-top: 80px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 25px;
+        min-height: calc(100vh - 80px);
+        justify-content: center;
+    }
+
+    .mainText {
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .main img {
+        order: 1;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid aqua;
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+
+    .main h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #bbb;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    .main h1 {
+        font-size: 32px;
+        margin: 15px 0;
+        line-height: 1.1;
+        word-wrap: break-word;
+        font-weight: 700;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .mainText p:first-of-type {
+        font-weight: 600;
+        color: aqua;
+        font-size: 12px;
+        margin: 15px 0;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        text-align: center;
+        word-spacing: 1px;
+        padding: 0 5px;
+    }
+
+    .mainText p:last-of-type {
+        font-size: 14px;
+        text-align: justify;
+        margin: 20px 0;
+        line-height: 1.6;
+        padding: 0 5px;
+        word-wrap: break-word;
+        color: #e8e8e8;
+        font-weight: 300;
+        hyphens: auto;
+        text-justify: inter-word;
+    }
+
+    .main button {
+        width: 110px;
+        height: 35px;
+        font-size: 13px;
+        margin-top: 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .serviceCard {
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 20px 15px;
+    }
+
+    .workCard img {
+        width: 95%;
+        max-width: 280px;
+    }
+
+    .contact {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
+    .skill-logo {
+        width: 18px;
+        height: 18px;
+    }
+
+    .skill-name span {
+        font-size: 13px;
+    }
+
+    .skill-bar {
+        height: 5px;
+    }
+}
+
+/* Small Mobile Phones (375px - 413px) */
+@media screen and (min-width: 375px) and (max-width: 413px) {
+    nav {
+        height: 75px;
+        padding: 0 15px;
+    }
+
+    .logo h1 {
+        font-size: 17px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    /* Home Section - Small Mobile */
+    .main {
+        margin-top: 85px;
+        padding: 25px 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+        min-height: calc(100vh - 85px);
+        justify-content: center;
+    }
+
+    .mainText {
+        order: 2;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .main img {
+        order: 1;
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid aqua;
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    }
+
+    .main h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+        color: #bbb;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+    }
+
+    .main h1 {
+        font-size: 36px;
+        margin: 18px 0;
+        line-height: 1.1;
+        word-wrap: break-word;
+        font-weight: 700;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .mainText p:first-of-type {
+        font-weight: 600;
+        color: aqua;
+        font-size: 13px;
+        margin: 18px 0;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: center;
+        word-spacing: 1px;
+        padding: 0 5px;
+    }
+
+    .mainText p:last-of-type {
+        font-size: 15px;
+        text-align: justify;
+        margin: 22px 0;
+        line-height: 1.6;
+        padding: 0 8px;
+        word-wrap: break-word;
+        color: #e8e8e8;
+        font-weight: 300;
+        hyphens: auto;
+        text-justify: inter-word;
+    }
+
+    .main button {
+        width: 120px;
+        height: 36px;
+        font-size: 14px;
+        margin-top: 22px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .serviceCard {
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+
+    .workCard img {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .contact {
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+
+    .skill-logo {
+        width: 19px;
+        height: 19px;
+    }
+
+    .skill-name span {
+        font-size: 14px;
+    }
+
+    .skill-bar {
+        height: 6px;
+    }
+}
+
+/* Medium Mobile Phones (414px - 480px) */
+@media screen and (min-width: 414px) and (max-width: 480px) {
+    nav {
+        height: 75px;
+        padding: 0 15px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    /* Home Section - Medium Mobile */
+    .main {
+        margin-top: 85px;
+        padding: 30px 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 35px;
+        min-height: calc(100vh - 85px);
+        justify-content: center;
+    }
+
+    .mainText {
+        order: 2;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .main img {
+        order: 1;
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid aqua;
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    }
+
+    .main h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #bbb;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .main h1 {
+        font-size: 40px;
+        margin: 20px 0;
+        line-height: 1.1;
+        word-wrap: break-word;
+        font-weight: 700;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .mainText p:first-of-type {
+        font-weight: 600;
+        color: aqua;
+        font-size: 14px;
+        margin: 20px 0;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: center;
+        word-spacing: 1px;
+        padding: 0 5px;
+    }
+
+    .mainText p:last-of-type {
+        font-size: 16px;
+        text-align: justify;
+        margin: 25px 0;
+        line-height: 1.7;
+        padding: 0 10px;
+        word-wrap: break-word;
+        color: #e8e8e8;
+        font-weight: 300;
+        hyphens: auto;
+        text-justify: inter-word;
+    }
+
+    .main button {
+        width: 130px;
+        height: 38px;
+        font-size: 15px;
+        margin-top: 25px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .serviceCard {
+        width: calc(100% - 40px);
+        margin: 20px;
+    }
+
+    .workCard img {
+        width: 85%;
+        max-width: 380px;
+    }
+
+    .contact {
+        width: calc(100% - 40px);
+        margin: 20px;
+    }
+
+    .skill-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .skill-name span {
+        font-size: 14px;
+    }
+
+    .skill-bar {
+        height: 6px;
+    }
+}
+
+/* Large Mobile Phones & Small Tablets (481px - 767px) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    nav {
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    .logo h1 {
+        font-size: 19px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+        cursor: pointer;
+        font-size: 26px;
+    }
+
+    /* Home Section - Large Mobile */
+    .main {
+        margin-top: 90px;
+        padding: 35px 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 40px;
+        min-height: calc(100vh - 90px);
+        justify-content: center;
+    }
+
+    .mainText {
+        order: 2;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .main img {
+        order: 1;
+        width: 380px;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid aqua;
+        box-shadow: 0 0 35px rgba(0, 255, 255, 0.4);
+    }
+
+    .main h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #bbb;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .main h1 {
+        font-size: 44px;
+        margin: 22px 0;
+        line-height: 1.1;
+        word-wrap: break-word;
+        font-weight: 700;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .mainText p:first-of-type {
+        font-weight: 600;
+        color: aqua;
+        font-size: 15px;
+        margin: 22px 0;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: center;
+        word-spacing: 1px;
+        padding: 0 5px;
+    }
+
+    .mainText p:last-of-type {
+        font-size: 17px;
+        text-align: justify;
+        margin: 25px 0;
+        line-height: 1.7;
+        padding: 0 15px;
+        word-wrap: break-word;
+        color: #e8e8e8;
+        font-weight: 300;
+        hyphens: auto;
+        text-justify: inter-word;
+    }
+
+    .main button {
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
+        margin-top: 25px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .serviceCard {
+        width: calc(100% - 50px);
+        max-width: 500px;
+        margin: 25px auto;
+    }
+
+    .workCard img {
+        width: 80%;
+        max-width: 450px;
+    }
+
+    .contact {
+        width: 80%;
+        max-width: 450px;
+        margin: 25px auto;
+    }
+
+    .skill-logo {
+        width: 22px;
+        height: 22px;
+    }
+
+    .skill-name span {
+        font-size: 15px;
+    }
+
+    .skill-bar {
+        height: 7px;
+    }
+}
+
+/* Tablets (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        height: 80px;
+        padding: 0 30px;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    #bar {
+        display: none;
+    }
+
+    /* Home Section - Tablets */
+    .main {
+        margin-top: 100px;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        min-height: calc(100vh - 100px);
+    }
+
+    .mainText {
+        order: 1;
+        flex: 1;
+        max-width: 50%;
+        padding: 0 20px;
+    }
+
+    .main img {
+        order: 2;
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid aqua;
+        box-shadow: 0 0 40px rgba(0, 255, 255, 0.4);
+    }
+
+    .main h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #bbb;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .main h1 {
+        font-size: 48px;
+        margin: 20px 0;
+        line-height: 1.1;
+        word-wrap: break-word;
+        font-weight: 700;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .mainText p:first-of-type {
+        font-weight: 600;
+        color: aqua;
+        font-size: 16px;
+        margin: 20px 0;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: left;
+        word-spacing: 1px;
+    }
+
+    .mainText p:last-of-type {
+        font-size: 17px;
+        text-align: justify;
+        margin: 25px 0;
+        line-height: 1.7;
+        word-wrap: break-word;
+        color: #e8e8e8;
+        font-weight: 300;
+        hyphens: auto;
+        text-justify: inter-word;
+    }
+
+    .main button {
+        width: 150px;
+        height: 42px;
+        font-size: 17px;
+        margin-top: 25px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .serviceCard {
+        width: 280px;
+        margin: 20px 15px;
+    }
+
+    .workCard img {
+        width: 500px;
+        max-width: 90%;
+    }
+
+    .contact {
+        width: 450px;
+        max-width: 90%;
+        margin: 30px auto;
+    }
+
+    .skill-logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .skill-name span {
+        font-size: 16px;
+    }
+
+    .skill-bar {
+        height: 8px;
+    }
+}
+
+/* Large Tablets & Small Laptops (1024px - 1199px) */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    nav {
+        height: 80px;
+        padding: 0 40px;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    #bar {
+        display: none;
+    }
+
+    /* Home Section - Large Tablets */
+    .main {
+        margin-top: 110px;
+        padding: 50px 40px;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        min-height: calc(100vh - 110px);
+    }
+
+    .mainText {
+        order: 1;
+        flex: 1;
+        max-width: 55%;
+        padding: 0 20px;
+    }
+
+    .main img {
+        order: 2;
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid aqua;
+        box-shadow: 0 0 45px rgba(0, 255, 255, 0.4);
+    }
+
+    .main h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #bbb;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .main h1 {
+        font-size: 56px;
+        margin: 22px 0;
+        line-height: 1.1;
+        word-wrap: break-word;
+        font-weight: 700;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .mainText p:first-of-type {
+        font-weight: 600;
+        color: aqua;
+        font-size: 17px;
+        margin: 22px 0;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: left;
+        word-spacing: 1px;
+    }
+
+    .mainText p:last-of-type {
+        font-size: 18px;
+        text-align: justify;
+        margin: 25px 0;
+        line-height: 1.7;
+        word-wrap: break-word;
+        color: #e8e8e8;
+        font-weight: 300;
+        hyphens: auto;
+        text-justify: inter-word;
+    }
+
+    .main button {
+        width: 150px;
+        height: 42px;
+        font-size: 17px;
+        margin-top: 25px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .serviceCard {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .workCard img {
+        width: 550px;
+        max-width: 90%;
+    }
+
+    .contact {
+        width: 500px;
+        max-width: 90%;
+        margin: 30px auto;
+    }
+}
+
+/* Desktop (1200px+) */
+@media screen and (min-width: 1200px) {
+    nav {
+        height: 80px;
+        padding: 0 50px;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    #bar {
+        display: none;
+    }
+
+    /* Home Section - Desktop */
+    .main {
+        margin-top: 111px;
+        padding: 60px 50px;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        min-height: calc(100vh - 111px);
+    }
+
+    .mainText {
+        order: 1;
+        flex: 1;
+        max-width: 50%;
+        padding: 0 20px;
+    }
+
+    .main img {
+        order: 2;
+        width: 750px;
+        height: auto;
+        max-height: 750px;
+        object-fit: cover;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .main h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #bbb;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .main h1 {
+        font-size: 66px;
+        margin: 22px 0;
+        line-height: 1.1;
+        word-wrap: break-word;
+        font-weight: 700;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .mainText p:first-of-type {
+        font-weight: 600;
+        color: aqua;
+        font-size: 18px;
+        margin: 22px 0;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: left;
+        word-spacing: 1px;
+    }
+
+    .mainText p:last-of-type {
+        font-size: 18px;
+        text-align: justify;
+        margin: 25px 0;
+        line-height: 1.6;
+        word-wrap: break-word;
+        color: #e8e8e8;
+        font-weight: 300;
+        hyphens: auto;
+        text-justify: inter-word;
+    }
+
+    .main button {
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
+        margin-top: 25px;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    .serviceCard {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .workCard img {
+        width: 600px;
+        max-width: 90%;
+    }
+
+    .contact {
+        width: 400px;
+        margin: 30px auto;
+    }
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: 767px) {
+    nav ul.mobile-menu {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(3, 3, 23);
+        padding: 20px 0;
+        z-index: 1000;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border-top: 2px solid aqua;
+    }
+
+    nav ul.mobile-menu li {
+        margin: 12px 0;
+        text-align: center;
+    }
+
+    nav ul.mobile-menu li a {
+        font-size: 18px;
+        padding: 10px 20px;
+        display: block;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav ul.mobile-menu li a:hover {
+        background-color: rgba(0, 255, 255, 0.1);
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
